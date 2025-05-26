@@ -8,14 +8,14 @@ const Home = () => {
   return (
     <Container>
       <view>
+        <text bindtap={() => nav('/')} className="text-xl font-semibold">
+          Back
+        </text>
         <text className="title">Home</text>
         <text>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illum at,
           voluptates ipsa dolores perferendis consequatur tempora, vero a veniam
           provident ducimus ipsam ipsum non ex? Et sequi dignissimos quia.
-        </text>
-        <text bindtap={() => nav('/')} className="text-xl font-semibold">
-          Back
         </text>
       </view>
     </Container>

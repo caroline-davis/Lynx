@@ -40,6 +40,9 @@ const Product = () => {
       ) : (
         <Container>
           <view className="p-4">
+            <text bindtap={() => nav(-1)} className="text-xl font-semibold">
+              Back
+            </text>
             <text className="title">Product</text>
             <list
               list-type="waterfall" // need to add this to make it render
@@ -62,9 +65,6 @@ const Product = () => {
                 );
               })}
             </list>
-            <text bindtap={() => nav(-1)} className="text-xl font-semibold">
-              Back
-            </text>
           </view>
         </Container>
       )}
